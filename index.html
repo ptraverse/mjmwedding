@@ -1,1 +1,51 @@
-<img src="mjm1.jpg" style="width:100%;">
+<html>
+<head>
+<style>
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	</style>
+<title>M + J = &lt;3</title>
+<img src="mjm1.jpg" style="width:100%;" usemap="#clockmap">
+
+<map name="clockmap">
+<area shape="rect" coords="910,278,1111,378" href="welcome.html" alt="Welcome">
+<!--
+<area shape="rect" coords="852,406,1051,526" href="ceremony.html" alt="Ceremony"> 
+<area shape="rect" coords="730,556,867,662" href="drinks.html" alt="Drinks/Photos">
+<area shape="rect" coords="568,599,677,690" href="dinner.html" alt="Dinner">
+-->
+<area shape="rect" coords="250,430,395,547" href="speeches.html" alt="Speeches">
+<!--
+<area shape="rect" coords="196,262,372,392" href="dancing.html" alt="Dancing">
+<area shape="rect" coords="321,42,456,165" href="partying.html" alt="Partying"> 
+-->
+<area shape="rect" coords="558,2,678,76" href="sleeping.html" alt="Accomodations">
+</map>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		//alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+</body>
+</html>
