@@ -16,8 +16,11 @@
 		max-width: 100%;
 		width: auto;
 	}
+	.hover {
+		background-color: blue;
+	}
 	</style>
-<title>M + J = &lt;3</title>
+<title>Julien and Megan 2014</title>
 <img src="mjm1.jpg" style="width:100%;" usemap="#clockmap">
 
 <map name="clockmap">
@@ -43,6 +46,12 @@ $(document).ready(function(e) {
 	
 	$('area').on('click', function() {
 		//alert($(this).attr('alt') + ' clicked');
+	});
+	
+	$('area').hover( function() {
+	    	$( this ).addClass( "hover" );
+  	}, function() {
+    		$( this ).removeClass( "hover" );
 	});
 });
 </script>
