@@ -3,6 +3,7 @@
 <style>
 	body {
 		font-family: Helvetica, Arial, sans-serif;
+		background-color: #FFFFCD;
 	}
 	h1 {
 		font-size: 20px;
@@ -16,9 +17,7 @@
 		max-width: 100%;
 		width: auto;
 	}
-	.hover {
-		border: 1px black solid;
-	}
+
 	</style>
 <title>Julien and Megan 2014</title>
 <img src="mjm1.jpg" style="width:100%;" usemap="#clockmap">
@@ -46,10 +45,6 @@ $(document).ready(function(e) {
 	
 	$('area').on('click', function() {
 		//alert($(this).attr('alt') + ' clicked');
-	});
-	
-	$('area').hover( function() {
-	    	$( this ).toggleClass("hover");
 	});
 });
 </script>
