@@ -16,8 +16,8 @@
 		max-width: 100%;
 		width: auto;
 	}
-	#hover {
-		background-color: blue;
+	.hover {
+		border: 1px black solid;
 	}
 	</style>
 <title>Julien and Megan 2014</title>
@@ -49,9 +49,7 @@ $(document).ready(function(e) {
 	});
 	
 	$('area').hover( function() {
-	    	$( this ).addClass( "hover" );
-  	}, function() {
-    		$( this ).removeClass( "hover" );
+	    	$( this ).toggleClass("hover");
 	});
 });
 </script>
