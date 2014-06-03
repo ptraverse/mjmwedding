@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+		text-align: center;
+		background-color: #FFFFCD;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+		max-height: 100%;
+	}
+
+	</style>
+<title>Julien and Megan 2014</title>
+</head>
+<body>
+<img src="./Slide5.JPG" style="height:90%;" >
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		//alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+</body>
+</html>
